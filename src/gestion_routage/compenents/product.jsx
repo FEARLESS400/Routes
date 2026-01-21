@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Produit = styled.div`
   width: 300px;
   border: 1px solid #ccc;
-  min-height: 500px;
+  min-height: 480px;
 `;
 
 
@@ -17,7 +17,7 @@ function Product({ img, title, price, detail, panie }) {
         <Produit className="card">
           <div className="card-header">
             <Link to={detail}>
-              <img src={img} alt="" className='card-img-top' />
+              <img src={img} alt="" className='card-img-top' style={{minHeight: '250px'}}/>
             </Link>
           </div>
             <div className='card-body' >

@@ -8,6 +8,7 @@ import Fouter from './compenents/fouter';
 
 const Detail = styled.div`
   width: 500px;
+  min-height: 500px
 `;
 
 function ProductDetails({ data }) {
@@ -29,11 +30,15 @@ function ProductDetails({ data }) {
         <div className='container-fluid'>
           <Detail className='d-flex justify-content-center'>
             <div className="card" style={{width: "400px"}}>
-              <img src={product.img} alt="laptop" className="card-img-top p-2" />
+              <div className='card-header'>
+                <img src={product.img} alt="laptop" className="card-img-top p-2" />
+              </div>
 
               <div className="card-body">
-                <p className="card-text">{product.price}</p>
-
+                <p className="card-text"><strong>{product.price}</strong></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est adipisci, itaque facere asperiores corporis in repellat totam illo tempora optio praesentium iusto accusamus ipsum ipsa maxime doloremque atque tenetur deserunt!</p>
+              </div>
+              <div className="card-footer">
                 <Link to="/" className="btn btn-primary">
                   Back to dashboard
                 </Link>
