@@ -10,7 +10,7 @@ function Dashboard({ data }) {
     <>
       <Nav />
 
-      <div className='container vh-100'>
+      <div className='container vh-100 pt-5'>
         <div className='d-flex justify-content-center flex-wrap gap-4 '>
           {
             data.map((p) => (
